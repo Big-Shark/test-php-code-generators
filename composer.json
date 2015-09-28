@@ -1,0 +1,16 @@
+{
+  "name": "big-shark/test-php-code-generators",
+  "license": "MIT",
+  "description": "",
+  "keywords": ["generator", "PHP", "code", "test"],
+  "homepage": "https://github.com/Big-Shark/test-php-code-generators",
+  "require": {
+    "gossi/php-code-generator": "dev-master",
+    "memio/memio": "dev-master",
+    "nette/php-generator": "dev-master",
+    "gossi/php-code-formatter": "dev-master"
+  },
+  "autoload": {
+    "classmap": ["src/"]
+  }
+}
