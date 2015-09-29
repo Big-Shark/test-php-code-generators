@@ -20,6 +20,7 @@ class Memio
         $file = File::make('Memio.php')
             ->setStructure(Object::make('Sample')
                 ->addProperty(Property::make('string')
+                    ->makePublic()
                     ->setPhpdoc(PropertyPhpdoc::make()
                         ->setVariableTag(VariableTag::make('string String'))
                     )

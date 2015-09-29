@@ -4,7 +4,7 @@ class Sample
     /**
      * @var string String
      */
-    private $string;
+    public $string;
 
     /**
      *
