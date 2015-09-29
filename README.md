@@ -9,3 +9,4 @@
 | php7          | yes   | no    | yes   |
 | psr1          | yes   | yes   | yes   |
 | psr2          | no    | no    | no    |
+| docs          | yes(3)| yes(4)| no(0) |
