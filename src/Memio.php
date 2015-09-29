@@ -37,6 +37,6 @@ class Memio
         // Generate the code and display in the console
         $prettyPrinter = Build::prettyPrinter();
         $generatedCode = $prettyPrinter->generateCode($file);
-        file_put_contents('tmp/Memio.php', (string) $generatedCode);
+        file_put_contents('tmp/origin/Memio.php', (string) $generatedCode);
     }
 }

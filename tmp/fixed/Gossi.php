@@ -4,9 +4,7 @@
 class Sample
 {
     /**
-     * String
-     * 
-     * @var string
+     * @var string String
      */
     public $string;
 

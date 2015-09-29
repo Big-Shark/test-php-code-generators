@@ -16,6 +16,6 @@ class Nette {
             ->addComment('@return string')
             ->setBody('return $this->?;', ['string']);
 
-        file_put_contents('tmp/Nette.php', '<?php'.PHP_EOL.(string) $class);
+        file_put_contents('tmp/origin/Nette.php', '<?php'.PHP_EOL.(string) $class);
     }
 }
