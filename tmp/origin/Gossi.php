@@ -10,7 +10,7 @@ class Sample {
 
 	/**
 	 * Return string
-	 * 
+	 *
 	 * @return string
 	 */
 	public function get() {

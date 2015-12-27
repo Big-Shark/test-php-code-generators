@@ -8,6 +8,9 @@ $nette->sample();
 $memio = new src\Memio();
 $memio->sample();
 
+$PHPParser = new src\PHPParser();
+$PHPParser->sample();
+
 $gossi = new src\Gossi();
 $gossi->sample();
 
@@ -18,4 +21,5 @@ foreach ($files as $file) {
     copy($originDir.$file, $fixedDir.$file);
 }
 
-exec('php-cs-fixer fix tmp/fixed --level=psr2');
+echo exec('php-cs-fixer fix tmp/fixed --rules=@PSR2', $output);
+//var_dump($output);

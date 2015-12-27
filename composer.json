@@ -8,7 +8,8 @@
     "gossi/php-code-generator": "dev-master",
     "memio/memio": "dev-master",
     "nette/php-generator": "dev-master",
-    "gossi/php-code-formatter": "dev-master"
+    "gossi/php-code-formatter": "dev-master",
+    "nikic/php-parser": "1.x-dev"
   },
   "autoload": {
     "classmap": ["src/"]

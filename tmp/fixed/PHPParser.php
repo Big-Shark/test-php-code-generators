@@ -1,19 +1,17 @@
 <?php
-/**
- */
+
 class Sample
 {
     /**
      * @var string String
      */
-    public $string;
-
+    protected $string;
     /**
      * Return string
      *
-     * @return string
+     * @return string String
      */
-    public function get()
+    public function &get()
     {
         return $this->string;
     }

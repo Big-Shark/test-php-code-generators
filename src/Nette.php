@@ -2,11 +2,13 @@
 
 namespace src;
 
+use Nette\PhpGenerator\ClassType;
+
 class Nette {
 
     public function sample()
     {
-        $class = new \Nette\PhpGenerator\ClassType('Sample');
+        $class = new ClassType('Sample');
         $class->addProperty('string')
             ->addComment('@var string String');
 

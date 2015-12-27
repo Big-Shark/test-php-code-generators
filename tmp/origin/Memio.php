@@ -7,7 +7,7 @@ class Sample
     public $string;
 
     /**
-     *
+     * Return string.
      *
      * @return string
      */

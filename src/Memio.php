@@ -6,6 +6,7 @@ use Memio\Memio\Config\Build;
 use Memio\Model\File;
 use Memio\Model\Method;
 use Memio\Model\Object;
+use Memio\Model\Phpdoc\Description;
 use Memio\Model\Phpdoc\MethodPhpdoc;
 use Memio\Model\Phpdoc\PropertyPhpdoc;
 use Memio\Model\Phpdoc\ReturnTag;
@@ -28,7 +29,7 @@ class Memio
                 ->addMethod(
                     Method::make('get')
                     ->setPhpdoc(MethodPhpdoc::make()
-                        ->setDescription('Return string.')
+                        ->setDescription(Description::make('Return string.'))
                         ->setReturnTag(ReturnTag::make('string'))
                     )
                     ->setBody('return $this->string;')
