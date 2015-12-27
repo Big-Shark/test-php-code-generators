@@ -21,5 +21,7 @@ foreach ($files as $file) {
     copy($originDir.$file, $fixedDir.$file);
 }
 
-echo exec('php-cs-fixer fix tmp/fixed --rules=@PSR2', $output);
-//var_dump($output);
+exec('php-cs-fixer fix tmp/fixed --rules=@PSR2', $output);
+//exec('phpcs tmp --standard=PSR1', $output);
+//exec('phpcs tmp --standard=PSR2', $output);
+echo implode(PHP_EOL, $output);

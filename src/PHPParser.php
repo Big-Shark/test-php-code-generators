@@ -14,21 +14,23 @@ class PHPParser
     public function sample()
     {
         $factory = new BuilderFactory;
-        $node = $factory->class('Sample')
-            ->addStmt($factory->property('string')
-                ->makeProtected()
-                ->setDocComment('/**
-                          * @var string String
-                          */')
-            )
-            ->addStmt($factory->method('get')
-                ->makePublic()
-                ->setDocComment('/**
-                          * Return string
-                          *
-                          * @return string String
-                          */')
-                ->addStmt(new Node\Stmt\Return_(new Node\Expr\Variable('this->string')))
+        $node = $factory->namespace('name\space')
+            ->addStmt($factory->class('Sample')
+                ->addStmt($factory->property('string')
+                    ->makeProtected()
+                    ->setDocComment('/**
+                              * @var string String
+                              */')
+                )
+                ->addStmt($factory->method('get')
+                    ->makePublic()
+                    ->setDocComment('/**
+                              * Return string
+                              *
+                              * @return string String
+                              */')
+                    ->addStmt(new Node\Stmt\Return_(new Node\Expr\Variable('this->string')))
+                )
             )
             ->getNode()
         ;

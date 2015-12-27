@@ -19,7 +19,7 @@ class Memio
     public function sample()
     {
         $file = File::make('Memio.php')
-            ->setStructure(Object::make('Sample')
+            ->setStructure(Object::make('name\space\Sample')
                 ->addProperty(Property::make('string')
                     ->makePublic()
                     ->setPhpdoc(PropertyPhpdoc::make()

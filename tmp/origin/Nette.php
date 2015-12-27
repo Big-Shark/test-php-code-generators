@@ -1,4 +1,6 @@
 <?php
+namespace name\space;
+
 class Sample
 {
 	/** @var string String */

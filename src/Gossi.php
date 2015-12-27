@@ -16,6 +16,7 @@ class Gossi
     public function sample()
     {
         $class = new PhpClass('Sample');
+        $class->setNamespace('name\space');
         $class->setProperty(PhpProperty::create('string')
             ->setType('string', 'String')
         );

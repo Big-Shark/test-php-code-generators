@@ -1,5 +1,7 @@
 <?php
 
+namespace name\space;
+
 class Sample
 {
     /**
@@ -11,7 +13,7 @@ class Sample
      *
      * @return string String
      */
-    public function &get()
+    public function get()
     {
         return $this->string;
     }

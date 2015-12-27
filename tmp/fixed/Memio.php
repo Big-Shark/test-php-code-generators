@@ -1,4 +1,7 @@
 <?php
+
+namespace name\space;
+
 class Sample
 {
     /**
