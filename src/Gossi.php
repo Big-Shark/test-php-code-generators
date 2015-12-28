@@ -22,11 +22,18 @@ class Gossi
         );
 
         $writer = new Writer();
-
         $class->setMethod(PhpMethod::create('get')
             ->setDescription(['Return string'])
             ->setType('string')
             ->setBody($writer->writeln('return $this->string;')->getContent())
+        );
+
+        $writer = new Writer();
+        $class->setMethod(PhpMethod::create('set')
+            ->setDescription(['Set string'])
+            ->addSimpleDescParameter('string', 'string', 'String')
+            ->setType('$this')
+            ->setBody($writer->writeln('$this->string = $string;')->writeln('return $this;')->getContent())
         );
 
         $generator = new CodeFileGenerator();

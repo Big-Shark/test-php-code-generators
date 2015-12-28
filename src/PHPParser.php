@@ -31,6 +31,18 @@ class PHPParser
                               */')
                     ->addStmt(new Node\Stmt\Return_(new Node\Expr\Variable('this->string')))
                 )
+                ->addStmt($factory->method('set')
+                    ->makePublic()
+                    ->setDocComment('/**
+                              * Set string
+                              *
+                              * @param string $string String
+                              * @return $this
+                              */')
+                    ->addParam(new Node\Param('string'))
+                    ->addStmt(new Node\Name('$this->string = $string;'))
+                    ->addStmt(new Node\Stmt\Return_(new Node\Expr\Variable('this')))
+                )
             )
             ->getNode()
         ;

@@ -18,4 +18,15 @@ class Sample {
 	public function get() {
 		return $this->string;
 	}
+
+	/**
+	 * Set string
+	 *
+	 * @param string $string String
+	 * @return $this
+	 */
+	public function set($string) {
+		$this->string = $string;
+		return $this;
+	}
 }
